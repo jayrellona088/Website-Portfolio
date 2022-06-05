@@ -1,0 +1,40 @@
+.navigation-wrapper{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: flex-end;
+	align-content: space-around;
+	align-items: center;
+	background: var(--semiGreyColor);
+	border-radius: 15px;
+	z-index: 999;
+	position:sticky;
+	top:0;
+}
+#preview {
+	border: 2px dashed lightcoral;
+}
+
+.Header-Name{
+	margin-right: auto;
+	padding-left: 25px;
+}
+
+.navigation{
+	margin: 0;
+	padding: 10px;
+}
+.navigation li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.navigation li a {
+	transition: all 0.3 ease 0s;
+}
+
+.navigation li a:hover {
+	color: #0088a9;
+}
+/*--------------------Profile Section---------------------*/
+
