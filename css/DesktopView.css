@@ -152,8 +152,9 @@ section{
 	padding: 80px 0;
 }
 .about{
-	font-family: 'Poppins', sans-serif;
+	
 	padding: 90px 90px;
+	padding-bottom: 150px;
 }
 .about .title {
 	position: relative;
@@ -224,5 +225,7 @@ section{
 
 .about .about-content .right p{
 	text-align: justify;
-	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
 }

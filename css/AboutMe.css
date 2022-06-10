@@ -2,7 +2,8 @@
 	--whiteColor: #fff;
 	--semiGreyColor :#333333;
 	--ghostWhite: #f8f8ff;
-}
+	--lightgreen: #99BA14;
+}	
 
 *{
 	margin: 0;
@@ -31,7 +32,7 @@ section{
 	position: fixed;
 	width: 100%;
 	padding: 15px 0;
-	background: var(--semiGreyColor);
+	background: var(--lightgreen);
 	font-family: 'Ubuntu', sans-serif;
 	z-index: 999;
 }
@@ -48,7 +49,7 @@ section{
 	font-weight: 600;
 }
 .navbar .logo a span{
-		color: crimson;
+	color: var(--whiteColor);
 }
 .navbar .menu li  {
 	list-style: none;
@@ -62,7 +63,8 @@ section{
 	transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-	color: crimson;
+	color: var(--lightgreen);
+	-webkit-text-stroke: .5px white;
 }
 
 /* ---------------------- aboutme section styling ---------------------- */
