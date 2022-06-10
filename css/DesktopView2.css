@@ -2,6 +2,7 @@
 	--whiteColor: #fff;
 	--semiGreyColor :#333333;
 	--ghostWhite: #f8f8ff;
+	--lightgreen: #99BA14;
 }
 *{
 	margin: 0;
@@ -40,7 +41,7 @@ section{
 	font-weight: 600;
 }
 .navbar .logo a span{
-		color: crimson;
+		color: var(--lightgreen);
 }
 .navbar .menu li  {
 	list-style: none;
@@ -54,7 +55,7 @@ section{
 	transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-	color: crimson;
+	color: var(--lightgreen);
 }
 
 /* ------------ menu btn style  ------------ */
@@ -63,6 +64,29 @@ section{
 	font-size: 23px;
 	cursor: pointer;
 	display: none;
+}
+.scroll-up-btn{
+	position: fixed;
+	height: 45px;
+	width: 42px;
+	background: var(--lightgreen);
+	right: 30px;
+	bottom: 30px;
+	text-align: center;
+	line-height: 45px;
+	z-index: 9999;
+	font-size: 30px;
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+	bottom: 30px;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 /* ------------ home section style  ------------ */
@@ -100,7 +124,7 @@ section{
 }
 
 .home .home-content .text-3 span{
-	color: crimson;
+	color: var(--lightgreen);
 	font-weight: 500;
 }
 
@@ -140,7 +164,7 @@ section{
 	bottom: -12px;
 	left: 50%;
 	font-size: 20px;
-	color: crimson;
+	color: var(--lightgreen);
 	padding: 5px;
 	background: var(--whiteColor);
 	transform: translate(-50%);
@@ -177,7 +201,7 @@ section{
 }
 
 .about .about-content .right .text span{
-	color: crimson;
+	color: var(--lightgreen);
 }
 
 .about .about-content .right p{
