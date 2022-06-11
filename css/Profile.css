@@ -20,13 +20,6 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.body{
-	background: var(--semiGreyColor);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
 /* ------------ menu btn style  ------------ */
 .menu-btn{
 	color: var(--whiteColor);
@@ -224,6 +217,20 @@ section{
 	margin: 40px;
 	
 }
+
+.container .right_side a{
+	display: inline-block;
+	background: var(--lightgreen);
+	color: #fff;
+	font-size: 25px;
+	padding: 12px 36px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid var(--lightgreen);
+	transition: all 0.3 ease;
+	font-family: 'Ubuntu', sans-serif;
+}
+
 
 .about {
 	margin-bottom: 40px;

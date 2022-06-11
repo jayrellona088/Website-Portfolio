@@ -229,3 +229,124 @@ section{
 	font-weight: 600;
 	font-family: 'Poppins', sans-serif;
 }
+/* ---------------------- project section styling ---------------------- */
+.projects{
+	background: var(--semiGreyColor);
+}
+
+
+.section-title {
+	font-size: 4rem;
+	font-weight: 300;
+	color: var(--whiteColor);
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+.section-title span {
+	color: var(--lightgreen);
+}
+#projects .projects {
+	flex-direction: column;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 20px 0;
+
+}
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #99BA14 0%, #2c5f2d 100%);
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+#projects .project-info h1 {
+	font-size: 4rem;
+	letter-spacing: 3px;
+	font-weight: 600;
+}
+#projects .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-info p {
+	color: white;
+	letter-spacing: 3px;
+	font-size: 18px;
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: scroll  ;
+	position: relative;
+	margin-left: auto;
+  	margin-right: auto;
+  	align-items: center;
+}
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+
+	opacity: 0.7;
+}
+#projects .project-img img {
+	transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+
+
+@media only screen and (min-width: 768px) {
+	/* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 600px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+
+}
